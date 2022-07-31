@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #f0f2ff;
+  max-width: 1440px;
+  max-height: 900px;
+  margin: 0px;
+}
+body .bigcard {
+  width: 800px;
+  height: 1000px;
+  background-color: white;
+  position: relative;
+  border: #151b41 2px;
+}
+body .bigcard .navbar {
+  display: flex;
+  align-items: center;
+}
+body .bigcard .navbar .blackbutton {
+  border: #151b41 1px solid;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  color: #f0f2ff;
+  background-color: #151b41;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 0 auto;
+}
+body .bigcard .header {
+  width: 300px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+//COLORS
+$orangypink: #fb5d61;
+$purplypink: #8243e0;
+$blueyblack: #151b41;
+$purplywhite: #f0f2ff;
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: $purplywhite;
+    max-width: 1440px;
+    max-height: 900px;
+    margin: 0px;
+    .bigcard {
+        width: 800px;
+        height: 1000px;
+        background-color: white;
+        position: relative;
+        border: $blueyblack 2px;
+        .navbar {
+            display: flex;
+            align-items: center;
+            .blackbutton {
+                border: #151b41 1px solid;
+                height: 30px;
+                width: 100px;
+                text-align: center;
+                color: $purplywhite;
+                background-color: $blueyblack;
+                border-radius: 20px;
+                display: inline-block;
+                margin: 0 auto;
+            }
+        }
+        .header {
+            width: 300px;
+        }
+    }
+}
