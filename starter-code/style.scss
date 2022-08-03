@@ -5,35 +5,90 @@ $blueyblack: #151b41;
 $purplywhite: #f0f2ff;
 
 body {
-    display: flex;
-    justify-content: center;
-    background-color: $purplywhite;
-    max-width: 1440px;
-    max-height: 900px;
-    margin: 0px;
-    .bigcard {
-        width: 800px;
-        height: 1000px;
-        background-color: white;
-        position: relative;
-        border: $blueyblack 2px;
-        .navbar {
+    background-color: hsl(0deg, 0%, 100%);
+    // HEADER
+    .header {
+        padding-top: 50px;
+        padding-inline: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // BLACKBUTTON
+        .blackbutton {
+            width: 140px;
+            height: 40px;
+            border: black 1px solid;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+        }
+        // WARMBUTTON
+        .button-warm {
+            width: 140px;
+            height: 40px;
+            border: $orangypink 1px solid;
+            border-radius: 20px;
+            background-image: linear-gradient(180deg, hsl(13deg, 100%, 64%) 0.04%, hsl(322deg, 87%, 55%) 100%);
+        }
+    }
+    // MAXIMIZE SKILL SECTION
+    .top-section {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 40px;
+        padding-bottom: 10px;
+        .top__text-content {
+            margin-bottom: 10px;
+        }
+        .top_heading {
+            font-size: 2.5rem;
+            line-height: 1.25;
+            font-weight: 800;
+            color: hsl(233deg, 54%, 16%);
+            margin-bottom: 2px;
+        }
+        .paragraph {
+            font-size: 1rem;
+            font-weight: 500;
+            color: hsl(232deg, 10%, 56%);
+            margin-bottom: 1.5rem;
+            line-height: 1.625;
+        }
+    }
+    .coffeegirl img {
+        width: 600px;
+        margin-left: 50%;
+        margin-top: 5%;
+    }
+    .courses {
+        padding-inline: 20px;
+        background-image: linear-gradient(180deg, hsl(0deg, 0%, 100%) 0%, hsl(236deg, 100%, 97%) 100%);
+        .courses_heading {
+            font-weight: 800;
+            padding: 1em;
+            line-height: 2;
+            color: hsl(0deg, 0%, 100%);
+            border-radius: 10px;
+            background-image: linear-gradient(180deg, hsl(13deg, 100%, 64%) 0.04%, hsl(322deg, 87%, 55%) 100%);
+            margin-bottom: 2em;
+        }
+        .courses_course {
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            margin-bottom: 0;
             display: flex;
-            align-items: center;
-            .blackbutton {
-                border: #151b41 1px solid;
-                height: 30px;
-                width: 100px;
-                text-align: center;
-                color: $purplywhite;
-                background-color: $blueyblack;
-                border-radius: 20px;
-                display: inline-block;
-                margin: 0 auto;
-            }
+            flex-direction: column;
+            justify-content: space-between;
         }
-        .header {
-            width: 300px;
-        }
+    }
+    .footer {
+        background-color: hsl(233deg, 54%, 16%);
+        padding-block: 2.25rem;
+        padding-inline: max(1rem, 0.0610687023 * 100vw + -0.4312977099rem);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }

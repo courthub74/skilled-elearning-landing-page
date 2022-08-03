@@ -1,33 +1,84 @@
 body {
-  display: flex;
-  justify-content: center;
-  background-color: #f0f2ff;
-  max-width: 1440px;
-  max-height: 900px;
-  margin: 0px;
+  background-color: hsl(0deg, 0%, 100%);
 }
-body .bigcard {
-  width: 800px;
-  height: 1000px;
-  background-color: white;
-  position: relative;
-  border: #151b41 2px;
-}
-body .bigcard .navbar {
+body .header {
+  padding-top: 50px;
+  padding-inline: 50px;
+  padding-bottom: 50px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-body .bigcard .navbar .blackbutton {
-  border: #151b41 1px solid;
-  height: 30px;
-  width: 100px;
-  text-align: center;
-  color: #f0f2ff;
-  background-color: #151b41;
+body .header .blackbutton {
+  width: 140px;
+  height: 40px;
+  border: black 1px solid;
   border-radius: 20px;
-  display: inline-block;
-  margin: 0 auto;
+  background-color: black;
+  color: white;
 }
-body .bigcard .header {
-  width: 300px;
+body .header .button-warm {
+  width: 140px;
+  height: 40px;
+  border: #fb5d61 1px solid;
+  border-radius: 20px;
+  background-image: linear-gradient(180deg, hsl(13deg, 100%, 64%) 0.04%, hsl(322deg, 87%, 55%) 100%);
+}
+body .top-section {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 40px;
+  padding-bottom: 10px;
+}
+body .top-section .top__text-content {
+  margin-bottom: 10px;
+}
+body .top-section .top_heading {
+  font-size: 2.5rem;
+  line-height: 1.25;
+  font-weight: 800;
+  color: hsl(233deg, 54%, 16%);
+  margin-bottom: 2px;
+}
+body .top-section .paragraph {
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(232deg, 10%, 56%);
+  margin-bottom: 1.5rem;
+  line-height: 1.625;
+}
+body .coffeegirl img {
+  width: 600px;
+  margin-left: 50%;
+  margin-top: 5%;
+}
+body .courses {
+  padding-inline: 20px;
+  background-image: linear-gradient(180deg, hsl(0deg, 0%, 100%) 0%, hsl(236deg, 100%, 97%) 100%);
+}
+body .courses .courses_heading {
+  font-weight: 800;
+  padding: 1em;
+  line-height: 2;
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 10px;
+  background-image: linear-gradient(180deg, hsl(13deg, 100%, 64%) 0.04%, hsl(322deg, 87%, 55%) 100%);
+  margin-bottom: 2em;
+}
+body .courses .courses_course {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .footer {
+  background-color: hsl(233deg, 54%, 16%);
+  padding-block: 2.25rem;
+  padding-inline: max(1rem, 6.10687023vw - 0.4312977099rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
